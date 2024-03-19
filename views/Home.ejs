@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- <h1>
+        Home
+    </h1>
+     <a href="/viewdata">
+        Read Data
+    </a> --> 
+
+
+    <div class="container">
+        <div class="text">
+            Student Form
+        </div>
+        <form method="post" action="/stdcrud">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="fname" required>
+                    <div class="underline"></div>
+                    <label for="">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="lname" required>
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="email" required>
+                    <div class="underline"></div>
+                    <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="number" required>
+                    <div class="underline"></div>
+                    <label for="">Mobile No</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="grid" required>
+                    <div class="underline"></div>
+                    <label for="">Gr-Id</label>
+                    <br />
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <input type="submit" value="submit">
+                        </div>
+                        <div class="input-data">
+                            <div class="inner"></div>
+                        <button><a href="/viewdata">view</a></button>
+                        </div>
+                    </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
